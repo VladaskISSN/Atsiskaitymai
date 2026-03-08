@@ -29,7 +29,7 @@ int main() {
         cout << "Gausite: " << Rezultatas;
     }
 
-    if (P1asirinkimas == 3) {
+    if (Pasirinkimas == 3) {
         if (Valiuta == 1) Rezultatas = Kiekis / 0.9220;
         if (Valiuta == 2) Rezultatas = Kiekis / 1.2340;
         if (Valiuta == 3) Rezultatas = Kiekis / 107.8546;
