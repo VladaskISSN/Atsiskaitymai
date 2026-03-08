@@ -1,10 +1,13 @@
 #include <iostream>
+#include <iomanip> // kad leistu setprecision
 using namespace std;
 
 int main() {
 
     int Pasirinkimas, Valiuta;
     double Kiekis, Rezultatas;
+
+    cout << fixed << setprecision(2); //apvalinimas 2 skaiciai po kableliu
 
     cout << "1 - Palyginti kursa\n2 - Pirkti\n3 - Parduoti\n";
     cin >> Pasirinkimas;
@@ -16,9 +19,9 @@ int main() {
     cin >> Kiekis;
 
     if (Pasirinkimas == 1) {
-        if (Valiuta == 1) cout << "1 EUR = 0.8729 GBP";
-        if (Valiuta == 2) cout << "1 EUR = 1.1793 USD";
-        if (Valiuta == 3) cout << "1 EUR = 104.6918 INR";
+        if (Valiuta == 1) cout << "1 EUR = " << 0.8729 << " GBP";
+        if (Valiuta == 2) cout << "1 EUR = " << 1.1793 << " USD";
+        if (Valiuta == 3) cout << "1 EUR = " << 104.6918 << " INR";
     }
 
     if (Pasirinkimas == 2) {
