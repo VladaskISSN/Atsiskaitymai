@@ -20,7 +20,7 @@ int main() {
         if (Valiuta == 1) cout << "1 EUR = " << 0.8729 << " GBP";
         if (Valiuta == 2) cout << "1 EUR = " << 1.1793 << " USD";
         if (Valiuta == 3) cout << "1 EUR = " << 104.6918 << " INR";
-        return 0;
+        return 0; //kiekio nerodymas pirmam pasirinkime
     }
 
     cout << "Ivesk kieki: ";
