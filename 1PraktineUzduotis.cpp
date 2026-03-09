@@ -33,9 +33,9 @@ int main() {
     }
 
     if (Pasirinkimas == 3) {
-        if (Valiuta == 1) Rezultatas = Kiekis / 0.9220;
-        if (Valiuta == 2) Rezultatas = Kiekis / 1.2340;
-        if (Valiuta == 3) Rezultatas = Kiekis / 107.8546;
+        if (Valiuta == 1) Rezultatas = Kiekis * 0.9220;
+        if (Valiuta == 2) Rezultatas = Kiekis * 1.2340;
+        if (Valiuta == 3) Rezultatas = Kiekis * 107.8546;
 
         cout << "Gausite: " << Rezultatas << " EUR";
     }
