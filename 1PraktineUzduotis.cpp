@@ -27,11 +27,20 @@ int main() {
     cin >> Kiekis;
 
     if (Pasirinkimas == 2) {
-        if (Valiuta == 1) Rezultatas = Kiekis * 0.8600;
-        if (Valiuta == 2) Rezultatas = Kiekis * 1.1460;
-        if (Valiuta == 3) Rezultatas = Kiekis * 101.3862;
+        if (Valiuta == 1) {
+            Rezultatas = Kiekis * 0.8600;
+            cout << "Gausite: " << Rezultatas << " GBP";
+        }
 
-        cout << "Gausite: " << Rezultatas;
+        if (Valiuta == 2) {
+            Rezultatas = Kiekis * 1.1460;
+            cout << "Gausite: " << Rezultatas << " USD";
+        }
+
+        if (Valiuta == 3) {
+            Rezultatas = Kiekis * 101.3862;
+            cout << "Gausite: " << Rezultatas << " INR";
+        }
     }
 
     if (Pasirinkimas == 3) {
