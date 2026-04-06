@@ -39,6 +39,7 @@ do {
         }else {
             cout << "Daugiau mokiniu prideti negalima\n";
         }
+    }
         if (pasirinkimas == 2) {
             if (KiekMokiniu == 0) {
                 cout << "Mokiniu sarasas tuscias. \n";
@@ -55,7 +56,6 @@ do {
             }
         }
 
-    }
     if (pasirinkimas == 3) {
         int MokinioNumeris, PazymioNumeris, NaujasPazymis;
         cout << "Kelinto mokinio pazymi nori pakeisti? " ;
@@ -95,10 +95,12 @@ do {
         } else {
             cout << "Tokio mokinio nera.\n";
         }
+    }
+        if (pasirinkimas == 5) {
+            cout << "Programa baigta.\n";
+        }
 
-
-} while (pasirinkimas != 0);
+} while (pasirinkimas != 5);
 return 0;
 }
-
 
