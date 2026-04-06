@@ -21,9 +21,30 @@ do {
     cout << "pasirink";
     cin >> pasirinkimas;
 
+    if (pasirinkimas == 1) {
+        if (KiekMokiniu < DidziausiasgGalimasMokiniuskaicius) {
+            cout << "Ivesk mokinio varda:";
+            cin >> Vardai[KiekMokiniu];
+            cout << "Kiek pazymiu nori ivesti?";
+            cin >> KiekPazymiu[KiekMokiniu];
+            if (KiekPazymiu[KiekMokiniu] > DidziausiasGalimasPazymiuSkaicius ) {
+                cout <<"Ivedei per daug pazymiu, bus ivesta tik " <<DidziausiasGalimasPazymiuSkaicius << ".\n";
+                KiekPazymiu[KiekMokiniu] = DidziausiasGalimasPazymiuSkaicius;
+            } for (int i= 0; i <KiekPazymiu[KiekMokiniu]; i++) {
+                cout << "Ivesk" << i + 1 << "pazymi: ";
+                cin >> Pazymiai[KiekMokiniu][i];
+            }
+            KiekMokiniu++;
+            cout << "Mokinys pridetas. \n";
+        }else {
+            cout << "Daugiau mokiniu prideti negalima\n";
+        }
+
+
+    }
+
 } while (pasirinkimas != 0);
 return 0;
 }
-
 
 
