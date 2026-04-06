@@ -56,6 +56,27 @@ do {
         }
 
     }
+    if (pasirinkimas == 3) {
+        int MokinioNumeris, PazymioNumeris, NaujasPazymis;
+        cout << "Kelinto mokinio pazymi nori pakeisti? " ;
+        cin >> MokinioNumeris;
+        MokinioNumeris--;  // nr-1
+        if (MokinioNumeris >= 0 && MokinioNumeris < KiekMokiniu) {
+            cout << "Kelinta pazymi nori pakeisti? ";
+            cin >> PazymioNumeris;
+            PazymioNumeris--;
+            if (PazymioNumeris >= 0 && PazymioNumeris <KiekPazymiu[MokinioNumeris]) {
+                cout << "Ivesk nauja pazymi: ";
+                cin >> NaujasPazymis;
+                Pazymiai[MokinioNumeris][PazymioNumeris] = NaujasPazymis;
+                cout << "Pazymys pakeistas.\n";
+            }else {
+                cout << "Tokio pazymio nera.\n";
+            }
+            }else {
+                cout << "Tokio mokinio nera.\n";
+        }
+    }
 
 } while (pasirinkimas != 0);
 return 0;
