@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip> // kad leistu setprecision
+#include <iomanip> // kad leistu setprecisi
 using namespace std;
 
 int main() {

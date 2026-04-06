@@ -77,6 +77,25 @@ do {
                 cout << "Tokio mokinio nera.\n";
         }
     }
+    if (pasirinkimas == 4) {
+        int MokinioNumeris, PazymioNumeris;
+        cout << "Kelinta mokini nori istrinti?" ;
+        cin >> MokinioNumeris;
+        MokinioNumeris--; //sumazinti vienetu
+        if (MokinioNumeris >= 0 && MokinioNumeris < KiekMokiniu) {
+            for (int i = MokinioNumeris; i < KiekMokiniu - 1; i++) {
+                Vardai[i] = Vardai[i + 1];
+                KiekPazymiu[i] = KiekPazymiu[i + 1];
+                for (int j= 0; j < DidziausiasGalimasPazymiuSkaicius; j++) {
+                    Pazymiai[i][j] = Pazymiai[i + 1][j];
+                }
+            }
+            KiekMokiniu--;
+            cout << "Mokinys istrintas. \n";
+        } else {
+            cout << "Tokio mokinio nera.\n";
+        }
+
 
 } while (pasirinkimas != 0);
 return 0;
