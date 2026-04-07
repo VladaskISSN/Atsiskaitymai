@@ -45,7 +45,7 @@ do {
                 cout << "Mokiniu sarasas tuscias. \n";
             } else {
                 cout << "Mokiniu sarasas: \n";
-                for (int i= 0; i <KiekMokiniu; i++) {
+                for (int i= 0; i < KiekMokiniu; i++) {
                     cout << i + 1 << " " << Vardai[i] << " "; //tarpai kad butu numeracija tarp numerio ir ivesto vardo
                     for (int j= 0; j < KiekPazymiu[i]; j++) {
                         cout << Pazymiai[i][j] << " ";
