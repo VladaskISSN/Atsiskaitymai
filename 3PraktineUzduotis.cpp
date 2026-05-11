@@ -18,10 +18,14 @@ void getData(menuItemType menuList[], int& size) {
 
     size = 0;
 
-    while (getline(file, menuList[size].menuItem, ';')) {
-        file >> menuList[size].menuPrice;
-        file.ignore();
+    if (!file) {
+        cout << "Klaida: nepavyko atidaryti failo menu.txt" << endl;
+        return;
+    }
 
+    while (size < MAX && getline(file, menuList[size].menuItem, ';')) {
+        file >> menuList[size].menuPrice;
+        file.ignore(1000, '\n');
         size++;
     }
 
