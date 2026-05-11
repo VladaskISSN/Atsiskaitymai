@@ -9,8 +9,8 @@ const int MAX = 20;
 const double PVM = 0.21;
 
 struct menuItemType {
-    string menuItem;
-    double menuPrice;
+    string menuItem;   // patiekalo pavadinimas
+    double menuPrice;  // patiekalo kaina
 };
 
 void getData(menuItemType menuList[], int& size) {
