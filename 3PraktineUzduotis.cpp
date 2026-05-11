@@ -90,6 +90,10 @@ int main() {
     int size;
 
     getData(menuList, size);
+    if (size == 0) {
+        cout << "Meniu tuscias arba nepavyko nuskaityti duomenu." << endl;
+        return 1;
+    }
     showMenu(menuList, size);
 
     int pasirinkimas;
