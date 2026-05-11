@@ -106,10 +106,17 @@ int main() {
         if (pasirinkimas == 0) {
             break;
         }
-
+        if (pasirinkimas < 1 || pasirinkimas > size) {
+            cout << "Tokio patiekalo nera. Bandykite dar karta." << endl;
+            continue;
+        }
         cout << "Kiek porciju: ";
         cin >> kiekis;
 
+        if (kiekis <= 0) {
+            cout << "Porciju kiekis turi buti teigiamas." << endl;
+            continue;
+        }
         kiekiai[pasirinkimas - 1] += kiekis;
     }
 
